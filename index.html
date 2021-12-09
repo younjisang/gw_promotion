@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Main.css">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <title>개운중학교 | 메인</title>
+</head>
+
+
+<script>
+    let filter = "win16|win32|win64|mac|macintel";
+    if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+         alert("현재 이 페이지는 모바일 화면 최적화가 이루어지지 않아 모바일 기기 접속을 제한합니다.빠른 시일 내로 좋은 모습 보여드리겠습니다.");
+        history.back();
+
+    }else
+    {
+      alert("이 페이지는 개운중 학생들이 만든 개운중학교 페이지입니다. 아직 미숙한 점 이해 부탁드립니다.");
+      console.log("desktop");
+    }
+</script>
+
+<body>
+  
+  <div class="row">
+    <div class="sidebar">
+      <span>
+        <a href="index.html">
+          <img id="gw-icon" src="http://gw.sen.ms.kr/dggb/module/file/selectImageView.do?atchFileId=241474&fileSn=0">
+        </a>
+      </span>
+
+      <div class="sidenav">
+        <ul>
+          <li style="background-color: #c5c5c5c4;"><a class="mmove_lk" href="index.html">메인</a></li>
+          <li class="border-top"></li>
+          <li style="background-color: #c5c5c557;"><a class="mmove_lk" href="event.html">학교 행사</a></li>
+          <li class="border-top"></li>
+          <li style="background-color: #c5c5c557;"><a class="mmove_lk" href="WayToCome.html">오시는 길</a></li>
+          <li class="border-top"></li>
+          <li style="background-color: #c5c5c557;"><a class="mmove_lk" href="https://gw.sen.ms.kr/index.do">학교 홈페이지</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+     <h3 id="lessonOfSc">바르고 슬기로운 사람이 되자</h3>
+
+    <button onclick="count()" id="easterbtn" style="background-color:white; font-size:1px;">easter egg</button>
+  </main>
+  <br>
+  <br>
+
+  <div class="lesn" style="text-align:center;">
+    <span id="SpanFont"> 
+       &nbsp;꿈과 배움과 나눔을 실천하는 행복한 학교&nbsp;
+    </span>
+  </div> 
+
+ <!-- <div class="max-w" style="text-align:center;">-->
+  <div class="container" style="margin: 0 auto;">
+    <!--<div style="float:left;">-->
+      <div class="rounded_box" id="div1" style="text-align:center; grid-column: 1 / 4; background-color:#69F9F7;">
+        <span style="font-size:30px; color:white;" id="box_sub_one">
+          <br>
+          꿈을 가지고 
+          <br>
+          미래를 도전
+        </span>
+      </div>
+
+      <div class="rounded_box" id="div2" style="text-align:center;grid-column: 1 / 4; background-color:#5CDBB5;">
+        <span style="font-size:30px; color:white;" id="box_sub_two">
+          <br>
+          배움의
+          <br>
+          즐거움을 실천
+        </span>
+      </div>
+<!-- 
+    <div style="float:left;"> -->
+      <div class="rounded_box" id="div3" style="text-align:center; grid-column: 1 / 4; background-color:#72F2A7;">
+        <span style="font-size:30px; color:white;" id="box_sub_three">
+          <br>
+          배려와
+          <br>
+          나눔을 실천
+        </span>
+      </div>
+
+      <div class="rounded_box" id="div4" style="text-align:center;grid-column: 1 / 4; background-color:#5CDB6D;">
+        <span style="font-size:30px; color:white;" id="box_sub_four">
+          <br>
+          행복,건강한   
+          <br>
+          학교 생활
+        </span>
+      </div>
+    </div>
+ <!-- </div> -->
+</body>
+
+<script>
+  var cnt = 0;
+
+  function count()
+  {
+    cnt++;
+    console.log(cnt);
+    document.getElementById('easterbtn').style.color = "white";
+    if(cnt == 5)
+    {
+      location.href="easteregg.html";
+    }
+  }
+
+</script>
+</html>

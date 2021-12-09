@@ -1,0 +1,115 @@
+#lessonOfSc {
+  font-size: 3rem;
+  font-weight: boldest;
+}
+
+a:hover {
+  background-color: #c5c5c5c4;
+}
+
+h3 {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+.lesn {
+  animation-duration: 4s;
+  animation-name: slideinLs;
+}
+
+/* h3 {
+      animation-name: coloring;
+      animation-iteration-count: infinite;
+      animation-duration: 7s;
+    } */
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  70% {
+    margin-left: -10%;
+    width: 100%;
+  }
+
+  100% {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@keyframes slideinLs {
+  0% {
+    margin-right: 100%;
+  }
+
+  100% {
+    text-align: center;
+  }
+}
+
+/* @keyframes coloring {
+      0%   {color: black;}
+      25%  {color: rgb(170, 119, 119);}
+      50%  {color: rgb(233, 100, 100);}
+      75%  {color: rgb(170, 119, 119);}
+      100% {color: black;}
+    } */
+
+#easterbtn {
+  border: 0;
+}
+
+#SpanFont {
+  border: 1px solid skyblue;
+  background-color: skyblue;
+  color: white;
+  font-size: 2rem;
+  border-radius: 20px 20px / 20px 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+#div1,
+#div2,
+#div3,
+#div4 {
+  width: 900px;
+  height: 150px;
+  transition: all 1s linear 0s;
+  border-color: black;
+}
+
+.rounded_box {
+  margin: 10px auto;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+#div1:hover {
+  border-color: #69f9f7;
+  width: 950px;
+  height: 200px;
+}
+
+#div2:hover {
+  border-color: #5cdbb5;
+  width: 950px;
+  height: 200px;
+}
+
+#div3:hover {
+  border-color: #72f2a7;
+  width: 950px;
+  height: 200px;
+}
+
+#div4:hover {
+  border-color: #5cdb6d;
+  width: 950px;
+  height: 200px;
+}
